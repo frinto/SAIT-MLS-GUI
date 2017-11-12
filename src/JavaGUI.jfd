@@ -1,0 +1,551 @@
+JFDML JFormDesigner: "6.0.0.0.84" Java: "1.8.0_112-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1::l:::x}"
+			"$verticalGroup": "par l {comp panel1::l:::x}"
+		} ) {
+			name: "this"
+			"background": new java.awt.Color( 24, 28, 24, 255 )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :::p, comp panel2:::::x, space :::p}, comp panel3::l::0:x}"
+				"$verticalGroup": "par l {seq l {space :::p, comp panel2:::p::p, space :::p, comp panel3::::0:x}}"
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 24, 28, 24, 255 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {space :::p, comp mainButton:::p:144:p, space :::p, comp clientButton:::p:149:p, space :::p, comp residentialButton:::p:153:p, space :::p, comp commercialButton:::::x, space :::p}}"
+					"$verticalGroup": "par l {seq {space :::p, par b {comp clientButton::b:p::p, comp mainButton::b:p::p, comp residentialButton::b:p::p, comp commercialButton::b:p::p}, space :::p}}"
+				} ) {
+					name: "panel2"
+					"background": new java.awt.Color( 24, 28, 24, 255 )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "mainButton"
+						"text": "Main"
+						"background": new java.awt.Color( 32, 36, 32, 255 )
+						"foreground": new java.awt.Color( 220, 220, 220, 255 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "mainButtonActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "clientButton"
+						"text": "Client"
+						"background": new java.awt.Color( 32, 36, 32, 255 )
+						"foreground": new java.awt.Color( 220, 220, 220, 255 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "clientButtonActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "residentialButton"
+						"text": "Residential"
+						"background": new java.awt.Color( 32, 36, 32, 255 )
+						"foreground": new java.awt.Color( 220, 220, 220, 255 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "residentialButtonActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "commercialButton"
+						"text": "Commercial"
+						"background": new java.awt.Color( 32, 36, 32, 255 )
+						"foreground": new java.awt.Color( 220, 220, 220, 255 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "commercialButtonActionPerformed", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.CardLayout ) ) {
+					name: "panel3"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq {par l {seq l {space :::p, comp image::::631:x}, seq {space :p:240:p, comp label23:::p::p, space :0:266:x}}, space :::p}, seq l {space :p:28:p, comp playMusicButton:::p::p, space u:::p, comp stopMusicButton:::p::p, space ::427:x}}"
+						"$verticalGroup": "par l {seq t {comp image:::p:415:p, space :::x, comp label23:::p::p, space u:::p, par b {comp playMusicButton::b:p::p, comp stopMusicButton::b:p::p}, space :p:17:p}}"
+					} ) {
+						name: "mainPanel"
+						"background": new java.awt.Color( 24, 28, 24, 255 )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label23"
+							"text": "Assignment 3 By Huy, Le"
+							"background": new java.awt.Color( 32, 36, 32, 255 )
+							"foreground": new java.awt.Color( 220, 220, 220, 255 )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "image"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "playMusicButton"
+							"text": "Play Music"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "playMusicButtonActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "stopMusicButton"
+							"text": "Stop Music"
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "stopMusicButtonActionPerformed", true ) )
+						} )
+					}, new FormLayoutConstraints( class java.lang.String ) {
+						"value": "card1"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq t {par t {seq t {space :p:30:p, par l {seq l {space :73:73:p, comp searchClientLabel2:::p::p}, comp label12:::p::p, comp radioClientID2:::p::p, comp radioClientType2:::p::p, comp label13:::p::p, seq l {comp textFieldSearchClient:::p:141:p, space :6:6:p, comp searchClientButton:::p::p, space :6:6:p, comp clearSearchClientButton:::p::p}, comp scrollPane2:::p:275:p, comp radioLastName2::l:p::p}, space ::72:x, par l {comp label14::t:p::p, seq t {comp label15:::p::p, space :18:18:p, comp clientIDTextField2:::p:177:p}, par l:t::p {seq {comp label17:::p::p, space :6:6:p, comp lastNameTextField2:::p:178:p}, seq {comp label18:::p::p, space :20:20:p, comp addressTextField2:::p:178:p}, seq {comp label19:::p::p, space :6:6:p, comp postalCodeTextField2:::p:171:p}, seq {comp saveClientButton:::p::p, space :p:12:p, comp deleteClientButton:::p::p, space u:::p, comp clearClientInfoButton:::p::p}, seq l {comp label20:::p::p, space :p:6:p, comp phoneNumClientTextField:::p:150:p}, seq l {comp label21:::p::p, space :::p, comp textFieldForClientType:::::x}}, seq t {comp label16:::p::p, space :::p, comp firstNameTextField2:::p:177:p}}}, seq t {space ::188:x, comp label22:::p::p, space :p:195:p}}, space :p:26:p}}"
+						"$verticalGroup": "par l {seq t {space :::p, comp label22:::p::p, space ::10:x, par l {seq {comp label14:::p::p, space :12:12:p, par l {comp label15:::p::p, comp clientIDTextField2:::p::p}, space :p:36:p, par b {comp firstNameTextField2::b:p::p, comp label16::b:p::p}, space :p:48:p, par l {seq {space :4:4:p, comp label17:::p::p}, comp lastNameTextField2:::p::p}, space :26:26:p, par l {seq {space :4:4:p, comp label18:::p::p}, comp addressTextField2:::p::p}, space :35:35:p, par l {seq {space :4:4:p, comp label19:::p::p}, comp postalCodeTextField2:::p::p}, space :36:36:p, par l {seq {space :4:4:p, comp label20:::p::p}, comp phoneNumClientTextField:::p::p}, space :p:20:p, par b {comp label21::b:p::p, comp textFieldForClientType::b:p::p}, space :p:19:p, par b {comp saveClientButton::b:p::p, comp deleteClientButton::b:p::p, comp clearClientInfoButton::b:p::p}}, seq {comp searchClientLabel2:::p::p, space :12:12:p, comp label12:::p::p, space :6:6:p, comp radioClientID2:::p::p, space :6:6:p, comp radioLastName2:::p::p, space :6:6:p, comp radioClientType2:::p::p, space :6:6:p, comp label13:::p::p, space :12:12:p, par l {seq l {space :4:4:p, comp textFieldSearchClient:::p::p}, comp searchClientButton:::p::p, comp clearSearchClientButton:::p::p}, space :6:6:p, comp scrollPane2:::p:212:p}}, space :p:6:p}}"
+					} ) {
+						name: "clientPanel"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "searchClientLabel2"
+							"text": "Search Clients"
+							"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label12"
+							"text": "Select Type Of Search To Be Performed:"
+						} )
+						add( new FormComponent( "javax.swing.JRadioButton" ) {
+							name: "radioClientID2"
+							"text": "Client ID"
+						} )
+						add( new FormComponent( "javax.swing.JRadioButton" ) {
+							name: "radioLastName2"
+							"text": "Last Name"
+						} )
+						add( new FormComponent( "javax.swing.JRadioButton" ) {
+							name: "radioClientType2"
+							"text": "Client Type"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label13"
+							"text": "Enter Search Parameters Below:"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "textFieldSearchClient"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "searchClientButton"
+							"text": "Search"
+							"background": new java.awt.Color( 32, 36, 32, 255 )
+							"foreground": new java.awt.Color( 220, 220, 220, 255 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "searchClientButtonActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "clearSearchClientButton"
+							"text": "Clear"
+							"background": new java.awt.Color( 32, 36, 32, 255 )
+							"foreground": new java.awt.Color( 220, 220, 220, 255 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "clearSearchClientButtonActionPerformed", true ) )
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane2"
+							add( new FormComponent( "javax.swing.JList" ) {
+								name: "searchListClient"
+								"selectedIndex": -1
+								addEvent( new FormEvent( "javax.swing.event.ListSelectionListener", "valueChanged", "searchListClientValueChanged", true ) )
+							} )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label14"
+							"text": "Client Information"
+							"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label15"
+							"text": "Client ID"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "clientIDTextField2"
+							"editable": false
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label16"
+							"text": "First Name"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "firstNameTextField2"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label17"
+							"text": "Last Name"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "lastNameTextField2"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label18"
+							"text": "Address"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "addressTextField2"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label19"
+							"text": "Postal Code"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "postalCodeTextField2"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label20"
+							"text": "Phone Number:"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "phoneNumClientTextField"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label21"
+							"text": "Client Type"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "saveClientButton"
+							"text": "Save"
+							"background": new java.awt.Color( 32, 36, 32, 255 )
+							"foreground": new java.awt.Color( 220, 220, 220, 255 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "saveClientButtonActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "deleteClientButton"
+							"text": "Delete"
+							"background": new java.awt.Color( 32, 36, 32, 255 )
+							"foreground": new java.awt.Color( 220, 220, 220, 255 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "deleteClientButtonActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "clearClientInfoButton"
+							"text": "Clear"
+							"background": new java.awt.Color( 32, 36, 32, 255 )
+							"foreground": new java.awt.Color( 220, 220, 220, 255 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "clearClientInfoButtonActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label22"
+							"text": "Client Management Screen"
+							"font": new java.awt.Font( "Segoe UI", 0, 20 )
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "textFieldForClientType"
+						} )
+					}, new FormLayoutConstraints( class java.lang.String ) {
+						"value": "card2"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq {par l {seq {par l {seq {space :p:157:p, comp label25:::p::p}, seq l {space :::p, comp radioResLegalDescription:::p::p}, seq l {space :::p, comp radioResQuadrantOfCity:::p::p}, seq l {space :::p, comp radioResPrice:::p::p}, seq l {space :::p, comp label29:::p::p}}, space :0:183:x}, seq {space :::p, par l {seq l {comp label28:::p::p, space :p:168:p, comp label31:::p::p, space :::p, comp resPropertyIDTextField::::161:x}, seq l {comp radioResPropertyID:::p::p, space :p:194:p, par l {seq {comp label33:::p::p, space u:::p, comp resAddressTextField::::184:x}, seq {comp label32:::p::p, space :::p, comp resDescriptionTextField::::172:x}, seq l {par l {comp label34::l:p::p, comp label35::l:p::p, comp label36::l:p::p}, space :::p, par l {comp resZoningTextField::::167:x, comp resCityTextField::::167:x, comp resAskingPriceTextField::l::167:x}}}}, seq l {comp textFieldSearchRes:::p:149:p, space :::p, comp searchButtonRes:::p::p, space :::p, comp clearButtonRes:::p::p, space :p:30:p, comp label37:::p::p, space :::p, comp resSqrFtTextField::::183:x}, seq l {comp scrollPane3:::p:283:p, space :p:30:p, par l {seq {par t {comp label38:::p::p, comp label39:::p::p}, space :::p, par l {comp resNumBedTextField::::217:x, comp resNumBathroomTextField::::217:x}}, seq t {space :0:127:x, comp resCommentsTextField:::p:191:p}, seq {par l {seq l {comp resSaveButton:::p::p, space :p:27:p, comp resDeleteButton:::p::p, space :p:27:p, comp resClearButton:::p::p}, comp label41::l:p::p}, space :0:90:x}, seq l {comp label40:::p::p, space :::p, comp textFieldForResGarageType::::246:x}}}}}}, space :::p}, seq l {space :p:57:p, comp label27:::p::p, space ::194:x, comp label30:::p::p, space :p:78:p}}"
+						"$verticalGroup": "par l {seq l {space :::p, comp label25:::p::p, space :::p, par b {comp label27::b:p::p, comp label30::b:p::p}, space :::p, par t {seq {par t {seq {par t {seq {par t {seq {par l {comp label28:::p::p, par b {comp label31::b:p::p, comp resPropertyIDTextField::b:p::p}}, space :::p, comp radioResPropertyID:::p::p}, par b {comp label32::b:p::p, comp resDescriptionTextField::b:p::p}}, space :::p, comp radioResLegalDescription:::p::p}, par b {comp label33::b:p::p, comp resAddressTextField::b:p::p}}, space :::p, comp radioResQuadrantOfCity:::p::p}, par b {comp label34::b:p::p, comp resCityTextField::b:p::p}}, space :::p, comp radioResPrice:::p::p}, par b {comp label35::b:p::p, comp resZoningTextField::b:p::p}}, space :::p, par l {comp label29:::p::p, comp resAskingPriceTextField::l:p::p, comp label36::l:p::p}, par l {seq l {space :p:14:p, par b {comp textFieldSearchRes::b:p::p, comp searchButtonRes::b:p::p, comp clearButtonRes::b:p::p}, space :::p, comp scrollPane3::::188:x, space :::p}, seq l {space :::p, par b {comp resSqrFtTextField::b:p::p, comp label37::b:p::p}, space :::p, par b {comp label38::b:p::p, comp resNumBathroomTextField::b:p::p}, space :::p, par b {comp resNumBedTextField::b:p::p, comp label39::b:p::p}, space :::p, par b {comp label40::b:p::p, comp textFieldForResGarageType::b:p::p}, space :p:20:p, par b {comp label41::b:p::p, comp resCommentsTextField::b:p::p}, space ::14:x, par b {comp resSaveButton::b:p::p, comp resDeleteButton::b:p::p, comp resClearButton::b:p::p}, space :p:36:p}}}}"
+					} ) {
+						name: "residentialPanel"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label25"
+							"text": "Residential Property Management"
+							"font": new java.awt.Font( "Segoe UI", 0, 20 )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label27"
+							"text": "Search Residential Property"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label28"
+							"text": "Select Type Of Search To Perform"
+						} )
+						add( new FormComponent( "javax.swing.JRadioButton" ) {
+							name: "radioResPropertyID"
+							"text": "Residential Property ID"
+						} )
+						add( new FormComponent( "javax.swing.JRadioButton" ) {
+							name: "radioResLegalDescription"
+							"text": "Residential Property Legal Description"
+						} )
+						add( new FormComponent( "javax.swing.JRadioButton" ) {
+							name: "radioResQuadrantOfCity"
+							"text": "Quadrant Of City"
+						} )
+						add( new FormComponent( "javax.swing.JRadioButton" ) {
+							name: "radioResPrice"
+							"text": "Residential Property Price"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label29"
+							"text": "Enter Search Paremeter Below:"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "textFieldSearchRes"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "searchButtonRes"
+							"text": "Search"
+							"background": new java.awt.Color( 32, 36, 32, 255 )
+							"foreground": new java.awt.Color( 220, 220, 220, 255 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "searchButtonResActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "clearButtonRes"
+							"text": "Clear"
+							"background": new java.awt.Color( 32, 36, 32, 255 )
+							"foreground": new java.awt.Color( 220, 220, 220, 255 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "clearButtonResActionPerformed", true ) )
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane3"
+							add( new FormComponent( "javax.swing.JList" ) {
+								name: "searchListResidential"
+								addEvent( new FormEvent( "javax.swing.event.ListSelectionListener", "valueChanged", "searchListResidentialValueChanged", true ) )
+							} )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label30"
+							"text": "Residential Property Information"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label31"
+							"text": "Residential Property ID"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "resPropertyIDTextField"
+							"editable": false
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label32"
+							"text": "Property Description"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "resDescriptionTextField"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label33"
+							"text": "Property Address"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "resAddressTextField"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label34"
+							"text": "City Of Quandrant"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "resCityTextField"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label35"
+							"text": "Zoning Of Property"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "resZoningTextField"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label36"
+							"text": "Property Asking Price"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "resAskingPriceTextField"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label37"
+							"text": "Building Square Footage"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "resSqrFtTextField"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label38"
+							"text": "No Of Bathrooms"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "resNumBathroomTextField"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label39"
+							"text": "No Of Bed Rooms"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "resNumBedTextField"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label40"
+							"text": "Garage Type"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label41"
+							"text": "Comments of property"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "resCommentsTextField"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "resSaveButton"
+							"text": "Save"
+							"background": new java.awt.Color( 32, 36, 32, 255 )
+							"foreground": new java.awt.Color( 220, 220, 220, 255 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "resSaveButtonActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "resDeleteButton"
+							"text": "Delete"
+							"background": new java.awt.Color( 32, 36, 32, 255 )
+							"foreground": new java.awt.Color( 220, 220, 220, 255 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "resDeleteButtonActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "resClearButton"
+							"text": "Clear"
+							"background": new java.awt.Color( 32, 36, 32, 255 )
+							"foreground": new java.awt.Color( 220, 220, 220, 255 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "resClearButtonActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "textFieldForResGarageType"
+						} )
+					}, new FormLayoutConstraints( class java.lang.String ) {
+						"value": "card3"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {seq t {space ::172:x, comp label26:::p::p, space :p:165:p}, seq l {par l {seq {space :p:97:p, comp label42:::p::p}, seq l {space :::p, comp label43:::p::p}, seq l {space :::p, comp radioComID:::p::p}, seq l {space :::p, comp radioComDescription:::p::p}, seq l {space :::p, comp radioComQuadrant:::p::p}, seq l {space :::p, comp radioComPropertyPrice:::p::p}, seq l {space :::p, par t:::p {comp comSearchTextField::l:::x, comp label44::l:::x}, space :::p, comp comSearchButton:::p::p, space :::p, comp comClearSearchButton:::p::p}, seq l {space :::p, comp scrollPane4:::p:302:p}}, par l {seq {space ::81:x, comp label45:::p::p, space :p:75:p}, seq l {space :p:34:p, par l {seq {comp comSaveButton:::p::p, space :p:41:p, comp comDeleteButton:::p::p, space :p:46:p, comp comClearInfoButton:::p::p, space ::40:x}, seq {comp label54:::p::p, space :::p, comp comCommentsTextField::::236:x}, seq {comp label53:::p::p, space u:::p, comp comNumFloorsTextField::::222:x}, seq {comp label52:::p::p, space :::p, comp textFieldForComPropertyType::::221:x}, seq {comp label50:::p::p, space :::p, comp comZoningTextField::::209:x}, seq {comp label49:::p::p, space :::p, comp comQuadrantTextField::::221:x}, seq {comp label48:::p::p, space :::p, comp comAddressTextField::::205:x}, seq {comp label47:::p::p, space :::p, comp comLegalDescriptionTextField::::156:x}, seq {comp label46:::p::p, space :::p, comp comPropertyIDTextField::::168:x}, seq l {comp label51:::p::p, space :::p, comp comAskingPriceTextField::::182:x}}, space :::p}}}}"
+						"$verticalGroup": "par l {seq l {space :::p, comp label26:::p::p, space :::p, par b {comp label42::b:p::p, comp label45::b:p::p}, space u:::p, par b {comp label43::b:p::p, comp label46::b:p::p, comp comPropertyIDTextField::b:p::p}, space :::p, par b {comp radioComID::b:p::p, comp label47::b:p::p, comp comLegalDescriptionTextField::b:p::p}, space :::p, par b {comp radioComDescription::b:p::p, comp label48::b:p::p, comp comAddressTextField::b:p::p}, space :::p, par b {comp radioComQuadrant::b:p::p, comp label49::b:p::p, comp comQuadrantTextField::b:p::p}, space :::p, par b {comp radioComPropertyPrice::b:p::p, comp label50::b:p::p, comp comZoningTextField::b:p::p}, space :::p, par b {comp label44::b:p::p, comp label51::b:p::p, comp comAskingPriceTextField::b:p::p}, par l {seq l {space :::p, par b {comp comSearchTextField::b:p::p, comp comSearchButton::b:p::p, comp comClearSearchButton::b:p::p}, space :::p, comp scrollPane4::::196:x}, seq l {space :p:42:p, par b {comp label52::b:p::p, comp textFieldForComPropertyType::b:p::p}, space :p:20:p, par b {comp label53::b:p::p, comp comNumFloorsTextField::b:p::p}, space s:::p, par b {comp label54::b:p::p, comp comCommentsTextField::b:p::p}, space :p:28:p, par b {comp comSaveButton::b:p::p, comp comDeleteButton::b:p::p, comp comClearInfoButton::b:p::p}, space ::28:x}}}}"
+					} ) {
+						name: "commercialPanel"
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label26"
+							"text": "Commercial Property Management"
+							"font": new java.awt.Font( "Segoe UI", 0, 20 )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label42"
+							"text": "Search Commercial Property"
+						} )
+						add( new FormComponent( "javax.swing.JRadioButton" ) {
+							name: "radioComID"
+							"text": "Commercial Property ID"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label43"
+							"text": "Select Search Type To Be Performed"
+						} )
+						add( new FormComponent( "javax.swing.JRadioButton" ) {
+							name: "radioComDescription"
+							"text": "Commercial Property Legal Description"
+						} )
+						add( new FormComponent( "javax.swing.JRadioButton" ) {
+							name: "radioComQuadrant"
+							"text": "Quadrant Of City"
+						} )
+						add( new FormComponent( "javax.swing.JRadioButton" ) {
+							name: "radioComPropertyPrice"
+							"text": "Commercial Property Price"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label44"
+							"text": "Enter Search Parameter Below"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "comSearchButton"
+							"text": "Search"
+							"background": new java.awt.Color( 32, 36, 32, 255 )
+							"foreground": new java.awt.Color( 220, 220, 220, 255 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "comSearchButtonActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "comClearSearchButton"
+							"text": "Clear"
+							"background": new java.awt.Color( 32, 36, 32, 255 )
+							"foreground": new java.awt.Color( 220, 220, 220, 255 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "comClearSearchButtonActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "comSearchTextField"
+						} )
+						add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+							name: "scrollPane4"
+							add( new FormComponent( "javax.swing.JList" ) {
+								name: "comSearchList"
+								addEvent( new FormEvent( "javax.swing.event.ListSelectionListener", "valueChanged", "comSearchListValueChanged", true ) )
+							} )
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label45"
+							"text": "Commercial Property Information"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label46"
+							"text": "Commercial Property ID"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "comPropertyIDTextField"
+							"editable": false
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label47"
+							"text": "Property Legal Description"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "comLegalDescriptionTextField"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label48"
+							"text": "Property Address"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "comAddressTextField"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label49"
+							"text": "City Quadrant"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "comQuadrantTextField"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label50"
+							"text": "Zoning Property"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "comZoningTextField"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label51"
+							"text": "Property Asking Price"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "comAskingPriceTextField"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label52"
+							"text": "Property Type"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label53"
+							"text": "No Of Floors"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "comNumFloorsTextField"
+						} )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "label54"
+							"text": "Comments"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "comCommentsTextField"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "comSaveButton"
+							"text": "Save"
+							"background": new java.awt.Color( 32, 36, 32, 255 )
+							"foreground": new java.awt.Color( 220, 220, 220, 255 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "comSaveButtonActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "comDeleteButton"
+							"text": "Delete"
+							"background": new java.awt.Color( 32, 36, 32, 255 )
+							"foreground": new java.awt.Color( 220, 220, 220, 255 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "comDeleteButtonActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "comClearInfoButton"
+							"text": "Clear"
+							"background": new java.awt.Color( 32, 36, 32, 255 )
+							"foreground": new java.awt.Color( 220, 220, 220, 255 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "comClearInfoButtonActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "textFieldForComPropertyType"
+						} )
+					}, new FormLayoutConstraints( class java.lang.String ) {
+						"value": "card4"
+					} )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 645, 585 )
+		} )
+	}
+}
